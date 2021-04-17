@@ -20,10 +20,10 @@
                     <button type="sumbit">Logout</button>
                     </form>
                 </li>
-                    <li><a href="{% url 'articles:create' %}" class="highlight">Create New Article </a></li>
+                <li><a href="{% url 'articles:create' %}" class="highlight">New Article </a></li>
                 {% else %}
-                    <li><a href="{% url 'accounts:login' %}">Login</a> </li>
-                    <li><a href="{% url 'accounts:signup' %}">Signup</a> </li>
+                    <li><a href="{% url 'accounts:login' %}"> Login </a> </li>
+                    <li><a href="{% url 'accounts:signup' %}"> Signup </a> </li>
                 {% endif %}
             </ul>
         </nav>
@@ -31,5 +31,6 @@
         {% block content %}
         {% endblock %}
         </div>
+        </header>
     </body>
 </html>
